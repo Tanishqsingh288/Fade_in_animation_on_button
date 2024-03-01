@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade_in_animation </title>
+    <style>
+        #btn {
+    padding-top:13px;                                        /*Adjust |according to your project*/
+    font-size: 16px;                                         /*Adjust |according to your project*/
+    background-color: #0077ff;                             /*Adjust |according to your project*/
+    color: #fff;                                           /*Adjust |according to your project*/
+    border: none;                                           
+    border-radius: 15px;                                     /*Adjust |according to your project*/
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+    height: 35px;                                           /*Adjust height of button according to your project*/
+    width: 120px;                                           /*Adjust Width of the button according to your project*/
+    font-size: 20px;
+    margin-top: 400px;                                        /*Adjust |according to your project*/
+}
+#btn:hover{                                                    
+    height: 40px;                                            /*Adjust |according to your project*/
+    width: 125px;                                            /*Adjust |according to your project*/
+    font-size: 22px;
+    border: 1px solid black;                              /*Adjust |according to your project*/
+    background-color: #53a4fa;                            /*Adjust |according to your project*/
+}
+@keyframes fadeIn {                                        /*Media Query*/
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+    </style>
+</head>
+<body>
+    <center><div id="btn">Click here</div></center>
+</body>
+</html>
